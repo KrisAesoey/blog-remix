@@ -7,6 +7,19 @@ export type Article = {
   content: PortableTextBlock[];
 }
 
+export type CodeBlock = {
+  _type: string;
+  code: string;
+  filename: string;
+  highlightedLines: number[];
+  language: string;
+}
+
+export type CodeBlocks = {
+  _type: string;
+  items: CodeBlock[];
+}
+
 export type TextBlock = {
   _type: string;
   content: PortableTextBlock[];

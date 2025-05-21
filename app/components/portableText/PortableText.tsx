@@ -4,16 +4,16 @@ import {
   type PortableTextReactComponents,
 } from '@portabletext/react'
 import { CodeBlockResolver } from './CodeBlockResolver'
-import { CodeBlocksResolver } from './CodeBlocksResolver'
+import { CodeBlockListResolver } from './CodeBlockListResolver'
 import { TextBlockResolver } from './TextBlockResolver'
-import { TextBlocksResolver } from './TextBlocksResolver'
+import { TextBlockListResolver } from './TextBlockListResolver'
 
 const components: Partial<PortableTextReactComponents> = {
   types: {
     codeBlock: CodeBlockResolver,
-    codeBlocks: CodeBlocksResolver,
+    codeBlockList: CodeBlockListResolver,
     textBlock: TextBlockResolver,
-    textBlocks: TextBlocksResolver,
+    textBlockList: TextBlockListResolver,
   },
 }
 

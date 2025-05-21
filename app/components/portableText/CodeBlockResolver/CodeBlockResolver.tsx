@@ -1,12 +1,12 @@
-import 'prismjs/themes/prism.css';
-import { Refractor, registerLanguage } from "react-refractor";
-import css from "refractor/lang/css";
-import ts from "refractor/lang/typescript";
-import { CodeBlock } from "../../../sanity/types";
-import './codeBlockResolver.css';
+import 'prismjs/themes/prism.css'
+import { Refractor, registerLanguage } from 'react-refractor'
+import css from 'refractor/lang/css'
+import ts from 'refractor/lang/typescript'
+import { CodeBlock } from '../../../sanity/types'
+import './codeBlockResolver.css'
 
 type Props = {
-  value: CodeBlock;
+  value: CodeBlock
 }
 
 registerLanguage(css)
@@ -18,6 +18,6 @@ export const CodeBlockResolver = ({ value }: Props) => {
       language={value.language}
       markers={value.highlightedLines}
       value={value.code}
-      />
+    />
   )
 }

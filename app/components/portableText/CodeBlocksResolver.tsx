@@ -1,8 +1,8 @@
-import { CodeBlocks } from "../../sanity/types";
-import { PortableText } from "./PortableText";
+import { CodeBlocks } from '../../sanity/types'
+import { PortableText } from './PortableText'
 
 type Props = {
-  value: CodeBlocks;
+  value: CodeBlocks
 }
 
 export const CodeBlocksResolver = ({ value }: Props) => {

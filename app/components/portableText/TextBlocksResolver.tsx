@@ -1,8 +1,8 @@
-import { TextBlocks } from "../../sanity/types";
-import { PortableText } from "./PortableText";
+import { TextBlocks } from '../../sanity/types'
+import { PortableText } from './PortableText'
 
 type Props = {
-  value: TextBlocks;
+  value: TextBlocks
 }
 
 export const TextBlocksResolver = ({ value }: Props) => {

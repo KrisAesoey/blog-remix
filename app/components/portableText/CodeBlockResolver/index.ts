@@ -1,1 +1,1 @@
-export { CodeBlockResolver } from "./CodeBlockResolver";
+export { CodeBlockResolver } from './CodeBlockResolver'

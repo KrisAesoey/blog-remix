@@ -3,7 +3,7 @@ import { useLoaderData } from '@remix-run/react'
 import groq from 'groq'
 import { PortableText } from '../../components/portableText/PortableText'
 import { sanityClient } from '../../sanity/client.server'
-import { Article } from '../../sanity/types'
+import { Article } from '../../sanity/sanity.types'
 
 type SanityResponse = {
   article: Article
@@ -37,9 +37,9 @@ export default function ArticleRoute() {
   const { article } = useLoaderData<typeof loader>()
 
   return (
-    <body>
+    <>
       <h1>{article.title}</h1>
-      <PortableText value={article.content} />
-    </body>
+      {article.content && <PortableText value={article.content} />}
+    </>
   )
 }

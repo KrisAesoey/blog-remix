@@ -1,0 +1,30 @@
+@import '../tokens/index.css';
+
+.code-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code-block {
+  box-shadow: var(--shadow-md);
+  margin: 0 auto;
+  /* Wrap long lines in code blocks */
+  pre[class*='language-'],
+  code[class*='language-'] {
+    font-size: var(--font-size-sm);
+    white-space: pre-wrap !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+.refractor-marker {
+  background-color: var(--color-sand-200);
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+}

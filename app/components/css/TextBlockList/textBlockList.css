@@ -1,0 +1,8 @@
+@import './../tokens/index.css';
+
+.text-block-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

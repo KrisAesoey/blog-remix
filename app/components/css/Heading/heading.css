@@ -1,0 +1,26 @@
+@import '../tokens/index.css';
+
+.heading {
+  color: var(--text-primary);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    'wght' 600,
+    'wdth' 100;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-sm {
+  font-size: var(--font-size-xl);
+}
+
+.heading-md {
+  font-size: var(--font-size-2xl);
+}
+
+.heading-lg {
+  font-size: var(--font-size-3xl);
+}

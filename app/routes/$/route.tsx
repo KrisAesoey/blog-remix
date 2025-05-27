@@ -1,9 +1,13 @@
 import { LoaderFunctionArgs, json } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import groq from 'groq'
-import { PortableText } from '../../components/portableText/PortableText'
+import { PortableText } from '../../components/css/portableText/PortableText'
 import { sanityClient } from '../../sanity/client.server'
 import { Article } from '../../sanity/sanity.types'
+
+import '../../components/css/tokens/index.css'
+import './route.css'
+import { Heading } from '../../components/css/Heading'
 
 type SanityResponse = {
   article: Article
@@ -37,9 +41,13 @@ export default function ArticleRoute() {
   const { article } = useLoaderData<typeof loader>()
 
   return (
-    <>
-      <h1>{article.title}</h1>
-      {article.content && <PortableText value={article.content} />}
-    </>
+    <div data-theme="css-magic" className="article-container">
+      <div className="article">
+        <Heading as="h1" size="lg">
+          {article.title}
+        </Heading>
+        {article.content && <PortableText value={article.content} />}
+      </div>
+    </div>
   )
 }

@@ -1,0 +1,50 @@
+[data-theme='css-magic'] {
+  --color-violet-50: #f4f0fc;
+  --color-violet-100: #e1d9f6;
+  --color-violet-200: #c4b3ec;
+  --color-violet-300: #a58ae1;
+  --color-violet-400: #8c6ed9;
+  --color-violet-500: #724ed0;
+  --color-violet-600: #603dc1;
+  --color-violet-700: #4d2cae;
+  --color-violet-800: #3a1e94;
+  --color-violet-900: #271270;
+
+  --color-peach-50: #fff6ed;
+  --color-peach-100: #ffe8d3;
+  --color-peach-200: #ffd1a7;
+  --color-peach-300: #ffb875;
+  --color-peach-400: #ffa34e;
+  --color-peach-500: #ff8e29;
+  --color-peach-600: #e67520;
+  --color-peach-700: #c45a17;
+  --color-peach-800: #9c410f;
+  --color-peach-900: #702b08;
+
+  --color-jade-50: #ecfef6;
+  --color-jade-100: #cbfce6;
+  --color-jade-200: #98f5ce;
+  --color-jade-300: #60eab5;
+  --color-jade-400: #2ed89f;
+  --color-jade-500: #00c78c;
+  --color-jade-600: #00a97a;
+  --color-jade-700: #008965;
+  --color-jade-800: #00684f;
+  --color-jade-900: #004837;
+
+  --color-sand-50: #fdfbf6;
+  --color-sand-100: #f6f1e8;
+  --color-sand-200: #e9ded0;
+  --color-sand-300: #d9c8b3;
+  --color-sand-400: #c6af94;
+  --color-sand-500: #b59878;
+  --color-sand-600: #9d7d5d;
+  --color-sand-700: #83634a;
+  --color-sand-800: #684c38;
+  --color-sand-900: #4b3728;
+
+  --text-primary: var(--color-violet-900);
+  --text-secondary: var(--color-peach-900);
+
+  --background-primary: var(--color-sand-100);
+}

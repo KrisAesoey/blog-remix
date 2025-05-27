@@ -1,0 +1,8 @@
+@import './../tokens/index.css';
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 768px;
+}

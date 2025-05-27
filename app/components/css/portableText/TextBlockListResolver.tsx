@@ -6,5 +6,5 @@ type Props = {
 }
 
 export const TextBlockListResolver = ({ value }: Props) => {
-  return value.items ? <TextBlockList items={value.items} /> : undefined
+  return value.items ? <TextBlockList items={value.items} /> : null
 }

@@ -41,7 +41,7 @@ export default function ArticleRoute() {
   const { article } = useLoaderData<typeof loader>()
 
   return (
-    <div data-theme="css-magic" className="article-container">
+    <div className="article-container">
       <div className="article">
         <Heading as="h1" size="lg">
           {article.title}

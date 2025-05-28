@@ -1,5 +1,5 @@
 @import '../tokens/index.css';
 
 .list-item {
-  padding: var(--space-sm) 0;
+  padding: 8px 0;
 }

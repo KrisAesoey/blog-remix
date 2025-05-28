@@ -1,5 +1,5 @@
 @import '../tokens/index.css';
 
 .ordered-list {
-  margin: 0;
+  margin: 16px 0;
 }

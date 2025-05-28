@@ -13,5 +13,5 @@
   flex-direction: column;
   gap: var(--space-xl);
   padding: var(--space-md);
-  width: 1024px;
+  max-width: 1024px;
 }

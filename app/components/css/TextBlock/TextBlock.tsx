@@ -8,6 +8,9 @@ import {
 import './textBlock.css'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
+import { OrderedList } from '../OrderedList'
+import { ListItem } from '../ListItem'
+import { UnorderedList } from '../UnorderedList'
 
 type Props = {
   text: TextBlockType['text']
@@ -41,6 +44,11 @@ const components: Partial<PortableTextReactComponents> = {
     ),
     em: ({ children }) => <Text fontSize="md">{<em>{children}</em>}</Text>,
   },
+  list: {
+    bullet: ({ children }) => <UnorderedList>{children}</UnorderedList>,
+    number: ({ children }) => <OrderedList>{children}</OrderedList>,
+  },
+  listItem: ({ children }) => <ListItem>{children}</ListItem>,
 }
 
 export const TextBlock = ({ text }: Props) => {

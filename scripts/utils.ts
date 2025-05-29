@@ -5,5 +5,5 @@ export function toPascalCase(str: string): string {
 }
 
 export function toCamelCase(str: string): string {
-  return str.replace(/-([a-z])/g, (_, char) => char.toUpperCase)
+  return str.replace(/-([a-z])/g, (_, char) => char.toUpperCase())
 }

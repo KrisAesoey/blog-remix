@@ -17,6 +17,7 @@
     "@remix-run/react": "^2.12.1",
     "@remix-run/serve": "^2.12.1",
     "@sanity/client": "^6.21.3",
+    "@sanity/image-url": "^1.1.0",
     "groq": "^3.57.4",
     "isbot": "^4.1.0",
     "prismjs": "^1.29.0",

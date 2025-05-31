@@ -18,3 +18,19 @@
 .text-lg {
   font-size: var(--font-size-lg);
 }
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-highlight {
+  color: var(--text-highlight);
+}

@@ -8,8 +8,8 @@ type Props = {
 export const RichImageListResolver = ({ value }: Props) => {
   return (
     <>
-      {value.items?.map((item, index) => (
-        <RichImageResolver key={index} image={item} />
+      {value.items?.map((item) => (
+        <RichImageResolver key={item._key} image={item} />
       ))}
     </>
   )

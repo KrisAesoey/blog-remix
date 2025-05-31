@@ -20,7 +20,7 @@ export const RichImageResolver = ({ image }: Prop) => {
         ${imageUrl(400)} 400w,
         ${imageUrl(800)} 800w,
         ${imageUrl(1200)} 1200w,
-        ${imageUrl(1600)} 1600w,
+        ${imageUrl(1600)} 1600w
         `}
       sizes="
         (max-width: 800px) 100vw,

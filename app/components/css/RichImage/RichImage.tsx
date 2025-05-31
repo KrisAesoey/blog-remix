@@ -34,12 +34,12 @@ export const RichImage = ({
         <Image />
         <figcaption className="rich-image__attributes">
           {caption && (
-            <Text style="secondary" fontSize="sm">
+            <Text variant="secondary" fontSize="sm">
               {caption}
             </Text>
           )}
           {credits && (
-            <Text style="muted" fontSize="sm">
+            <Text variant="muted" fontSize="sm">
               {credits}
             </Text>
           )}

@@ -1,0 +1,30 @@
+@import '../tokens/index.css';
+
+.rich-image__container {
+  container: rich-image;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin: 0;
+  width: 100%;
+}
+
+.rich-image__image {
+  box-shadow: var(--shadow-lg);
+  height: auto;
+  max-width: 100%;
+}
+
+.rich-image__attributes {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-sm);
+}
+
+@container rich-image (max-width: 512px) {
+  .rich-image__attributes {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+}

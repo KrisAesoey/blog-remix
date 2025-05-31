@@ -6,10 +6,12 @@ import {
 import { CodeBlockListResolver } from './CodeBlockListResolver'
 import { TextBlockResolver } from './TextBlockResolver'
 import { TextBlockListResolver } from './TextBlockListResolver'
+import { RichImageListResolver } from './RichImageListResolver'
 
 const components: Partial<PortableTextReactComponents> = {
   types: {
     codeBlockList: CodeBlockListResolver,
+    richImageList: RichImageListResolver,
     textBlock: TextBlockResolver,
     textBlockList: TextBlockListResolver,
   },

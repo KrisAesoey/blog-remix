@@ -34,7 +34,7 @@ export const CodeBlock = ({
         value={code}
       />
       {filename && (
-        <div className="code-block-filename">
+        <div className="code-block-filename" role="note" aria-label="filename">
           <Text fontSize="sm" variant="muted">
             {filename}
           </Text>

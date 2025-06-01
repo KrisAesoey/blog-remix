@@ -9,13 +9,14 @@ export const CodeBlockListResolver = ({ value }: Props) => {
   return (
     <>
       {value.items?.map((item, index) => {
-        if (!item.code) return null
+        if (!item.code?.code) return null
         return (
           <CodeBlock
             key={index}
-            language={item.language}
-            code={item.code}
-            highlightedLines={item.highlightedLines}
+            filename={item.filename}
+            language={item.code.language}
+            code={item.code.code}
+            highlightedLines={item.code.highlightedLines}
           />
         )
       })}

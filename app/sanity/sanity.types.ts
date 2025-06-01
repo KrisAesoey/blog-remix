@@ -180,12 +180,18 @@ export type RichImageList = {
   >
 }
 
+export type CodeBlock = {
+  _type: 'codeBlock'
+  filename?: string
+  code?: Code
+}
+
 export type CodeBlockList = {
   _type: 'codeBlockList'
   items: Array<
     {
       _key: string
-    } & Code
+    } & CodeBlock
   >
 }
 
@@ -240,6 +246,7 @@ export type AllSanitySchemaTypes =
   | SanityAssetSourceData
   | SanityImageMetadata
   | RichImageList
+  | CodeBlock
   | CodeBlockList
   | Article
   | Slug

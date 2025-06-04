@@ -29,12 +29,12 @@ const components: Partial<PortableTextReactComponents> = {
       </Heading>
     ),
     h3: ({ children }) => (
-      <Heading as="h3" size="md">
+      <Heading as="h3" size="sm">
         {children}
       </Heading>
     ),
     h4: ({ children }) => (
-      <Heading as="h4" size="md">
+      <Heading as="h4" size="sm">
         {children}
       </Heading>
     ),

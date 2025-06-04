@@ -43,9 +43,11 @@ export default function ArticleRoute() {
   return (
     <div data-theme="css-magic" className="article-container">
       <div className="article">
-        <Heading as="h1" size="lg">
-          {article.title}
-        </Heading>
+        <div className="article-header">
+          <Heading as="h1" size="lg">
+            {article.title}
+          </Heading>
+        </div>
         {article.content && <PortableText value={article.content} />}
       </div>
     </div>

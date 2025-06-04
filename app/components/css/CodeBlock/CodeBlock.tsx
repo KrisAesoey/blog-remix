@@ -51,7 +51,11 @@ export const CodeBlock = ({
             </Text>
           </div>
         )}
-        <button className="code-block__button" onClick={() => copy(code)}>
+        <button
+          className="code-block__button"
+          onClick={() => copy(code)}
+          aria-label="Copy code"
+        >
           <MdContentCopy />
         </button>
       </div>

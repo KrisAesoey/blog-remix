@@ -10,22 +10,35 @@
 .code-block {
   box-shadow: var(--shadow-md);
   margin: 0 auto;
-  /* Wrap long lines in code blocks */
-  pre[class*='language-'],
-  code[class*='language-'] {
-    font-size: var(--font-size-sm);
-    white-space: pre-wrap !important;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    overflow-x: auto;
-  }
 }
 
-.code-block-filename {
+pre.code-block {
+  background-color: var(--color-sand-100);
+  line-height: 1;
+}
+
+.code-block > code {
+  line-height: 1;
+  font-size: var(--font-size-xs);
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.code-block-footer {
+  display: flex;
+  gap: var(--space-sm);
   position: absolute;
   bottom: var(--space-md);
   right: var(--space-sm);
+}
+
+.code-block__button {
+  all: unset;
+  color: var(--color-sand-600);
+  cursor: pointer;
 }
 
 .refractor-marker {
